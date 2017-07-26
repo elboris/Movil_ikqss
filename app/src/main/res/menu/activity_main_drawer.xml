@@ -3,34 +3,73 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/envios"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="@string/envios" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/descargas"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="@string/descargas" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/levantamiento"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="@string/levantamiento" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/reasignacion"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="@string/reasignacion" />
     </group>
-
-    <item android:title="Communicate">
+    <item android:title="@string/Documentacion">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/Reportes"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="@string/Reportes" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/Documentacion"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Documentación" />
         </menu>
     </item>
-
+    <item android:title="@string/Seguimiento">
+        <menu>
+            <item
+                android:id="@+id/Notas"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Notas" />
+        </menu>
+    </item>
+    <item android:title="@string/Configuracion">
+        <menu>
+            <item
+                android:id="@+id/respaldo"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Respaldo" />
+            <item
+                android:id="@+id/restauracion"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Restauración" />
+            <item
+                android:id="@+id/exportar"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Exportar" />
+            <item
+                android:id="@+id/formatear"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Formatear SD" />
+        </menu>
+    </item>
+    <item android:title="@string/sistema">
+        <menu>
+            <item android:id="@+id/cerrarsesion"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/cerrarsesion"/>
+            <item android:id="@+id/reiniciar"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/reiniciar"/>
+            <item android:id="@+id/apagar"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/apagar"/>
+        </menu>
+    </item>
 </menu>
