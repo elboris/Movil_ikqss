@@ -1,8 +1,24 @@
 <resources>
-    <string name="app_name">Movil_ikqss</string>
+    <string name="app_name">ikqss movil</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="reasignarPersonal">Reasignaciones(Mobiles)</string>
+    <string name="Envios">Envios</string>
+    <string name="Notas">Notas</string>
+    <string name="Reportes">Reportes</string>
+    <string name="Configuracion">Configuración</string>
+    <string name="sistema">Sistema</string>
+    <string name="apagar">Apagar</string>
+    <string name="cerrarsesion">Cerrar Sesión</string>
+    <string name="reiniciar">Reiniciar</string>
+    <string name="Seguimiento">Seguimiento</string>
+    <string name="Documentacion">Documentación</string>
+    <string name="envios">Envios</string>
+    <string name="descargas">Descargas</string>
+    <string name="levantamiento">Levantamiento</string>
+    <string name="reasignacion">Reasignación</string>
+    <string name="email">soporte.ikqss@inegi.org.mx</string>
 </resources>
