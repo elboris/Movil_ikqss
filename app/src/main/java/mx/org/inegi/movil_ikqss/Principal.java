@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 /**
  * Created by ANDRES.LARA on 26/07/2017.
@@ -24,6 +25,9 @@ public class Principal extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.principal);
+
+        setTitle("Ejemplo nombre");
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -59,6 +63,11 @@ public class Principal extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+        TextView txtNameUser= (TextView) findViewById(R.id.txtNameUser);
+        txtNameUser.setText(getIntent().getExtras().getString("user"));
+        TextView txtVersionSistem= (TextView) findViewById(R.id.txtVersionSistem);
+        txtVersionSistem.setText("Num. Ver.("+getResources().getString(R.string.num_version_app)+")");
+        getMenuInflater().inflate(R.menu.main, menu);
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }

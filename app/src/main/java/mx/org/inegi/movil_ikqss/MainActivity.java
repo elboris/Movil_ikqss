@@ -25,6 +25,7 @@ public class MainActivity extends Activity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent (MainActivity.this, Principal.class);
+                intent.putExtra("user", "ejemplo");
                 //startActivityForResult(intent, 0);
                 startActivity(intent);
             }

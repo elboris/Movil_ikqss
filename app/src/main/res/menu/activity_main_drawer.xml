@@ -4,71 +4,80 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/envios"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@mipmap/ic_envio"
             android:title="@string/envios" />
         <item
             android:id="@+id/descargas"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@mipmap/ic_descarga"
             android:title="@string/descargas" />
         <item
             android:id="@+id/levantamiento"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_question_answer_black"
             android:title="@string/levantamiento" />
         <item
             android:id="@+id/reasignacion"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_screen_share_black"
             android:title="@string/reasignacion" />
     </group>
-    <item android:title="@string/Documentacion">
-        <menu>
-            <item
-                android:id="@+id/Reportes"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/Reportes" />
-            <item
-                android:id="@+id/Documentacion"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Documentación" />
-        </menu>
-    </item>
     <item android:title="@string/Seguimiento">
         <menu>
             <item
                 android:id="@+id/Notas"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_menu_noteblack"
                 android:title="Notas" />
         </menu>
     </item>
+    <item android:title="@string/Documentacion">
+        <menu>
+            <item
+                android:id="@+id/Reportes"
+                android:icon="@drawable/ic_insert_drive_file_black"
+                android:title="@string/Reportes" />
+            <item
+                android:id="@+id/Documentacion"
+                android:icon="@drawable/ic_picture_as_pdf_black"
+                android:title="Documentación" />
+        </menu>
+    </item>
+
     <item android:title="@string/Configuracion">
         <menu>
             <item
                 android:id="@+id/respaldo"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_archive_black"
                 android:title="Respaldo" />
             <item
                 android:id="@+id/restauracion"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_restore_black"
                 android:title="Restauración" />
             <item
                 android:id="@+id/exportar"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_sd_storage_black"
                 android:title="Exportar" />
+
+        </menu>
+    </item>
+    <item android:title="@string/Memoria">
+        <menu>
             <item
                 android:id="@+id/formatear"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@mipmap/ic_sd"
                 android:title="Formatear SD" />
         </menu>
     </item>
     <item android:title="@string/sistema">
         <menu>
+            <item android:id="@+id/wifi"
+                android:icon="@drawable/ic_wifi_tethering_black"
+                android:title="@string/wifi"/>
             <item android:id="@+id/cerrarsesion"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@mipmap/ic_cerrar_sesion"
                 android:title="@string/cerrarsesion"/>
             <item android:id="@+id/reiniciar"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_refresh_black"
                 android:title="@string/reiniciar"/>
             <item android:id="@+id/apagar"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@mipmap/ic_apagar"
                 android:title="@string/apagar"/>
         </menu>
     </item>

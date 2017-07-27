@@ -14,12 +14,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:scaleType="fitStart"
         app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <TextView
+        android:id="@+id/txtNameUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
@@ -28,8 +29,16 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/email" />
+        android:text="@string/email"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/txtVersionSistem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/num_version_app"
+        android:textAlignment="textEnd" />
 
 </LinearLayout>
