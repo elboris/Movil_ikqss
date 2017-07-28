@@ -1,6 +1,10 @@
 package mx.org.inegi.movil_ikqss;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -14,13 +18,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by ANDRES.LARA on 26/07/2017.
  */
 
-public class Principal extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class Principal extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +53,7 @@ public class Principal extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -90,34 +96,37 @@ public class Principal extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-        int id = item.getItemId();
-        if(id== R.id.envios){
-            Intent intent = new Intent (Principal.this, Envios.class);
+        Intent intent =null;
+        int id =0;
+        try{
+            id = item.getItemId();
+            switch (id){
+                case R.id.envios:
+                    intent = new Intent (Principal.this, Envios.class);
+                    break;
+                case R.id.descargas:
+                    intent = new Intent (Principal.this, Descargas.class);
+                    break;
+                case R.id.levantamiento:
+                    intent = new Intent (Principal.this, Levantamiento.class);
+                    break;
+                case R.id.reasignacion:
+                    intent = new Intent (Principal.this, Reasignaciones.class);
+                    break;
+                case R.id.notas:
+                    intent = new Intent (Principal.this, Notas.class);
+                    break;
+            }
             //startActivityForResult(intent, 0);
             startActivity(intent);
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            drawer.closeDrawer(GravityCompat.START);
+
+        }catch (Exception e){
+            intent =null;
+            Toast.makeText(Principal.this, "Error:"+e.getMessage(), Toast.LENGTH_LONG).show();
         }
-        if(id== R.id.descargas){
-            Intent intent = new Intent (this, Descargas.class);
-            //startActivityForResult(intent, 0);
-            startActivity(intent);
-        }
-/*
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }*/
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

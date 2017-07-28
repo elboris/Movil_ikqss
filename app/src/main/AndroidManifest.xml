@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -26,10 +26,23 @@
         <activity
             android:name=".Envios"
             android:label="@string/envios"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Descargas"
+            android:theme="@style/AppTheme.NoActionBar.Delete" />
+        <activity
+            android:name=".Descargas"
             android:label="@string/descargas"
-            android:theme="@style/AppTheme.NoActionBar.Delete"></activity>
+            android:theme="@style/AppTheme.NoActionBar.Delete" />
+        <activity
+            android:name=".Levantamiento"
+            android:label="@string/descargas"
+            android:theme="@style/AppTheme.NoActionBar.Delete" />
+        <activity
+            android:name=".Reasignaciones"
+            android:label="@string/reasignacion"
+            android:theme="@style/AppTheme.NoActionBar.Delete" />
+        <activity
+            android:name=".Notas"
+            android:label="@string/notas"
+            android:theme="@style/AppTheme.NoActionBar.Delete" />
     </application>
 
 </manifest>
