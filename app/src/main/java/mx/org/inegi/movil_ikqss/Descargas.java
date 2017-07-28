@@ -1,8 +1,13 @@
 package mx.org.inegi.movil_ikqss;
 
-/**
- * Created by ANDRES.LARA on 26/07/2017.
- */
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-public class Descargas {
+public class Descargas extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.descargas);
+    }
 }

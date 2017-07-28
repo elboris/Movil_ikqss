@@ -19,50 +19,50 @@
             android:icon="@drawable/ic_screen_share_black"
             android:title="@string/reasignacion" />
     </group>
-    <item android:title="@string/Seguimiento">
+    <item android:title="@string/seguimiento">
         <menu>
             <item
                 android:id="@+id/Notas"
                 android:icon="@drawable/ic_menu_noteblack"
-                android:title="Notas" />
+                android:title="@string/notas" />
         </menu>
     </item>
-    <item android:title="@string/Documentacion">
+    <item android:title="@string/archivos">
         <menu>
             <item
                 android:id="@+id/Reportes"
                 android:icon="@drawable/ic_insert_drive_file_black"
-                android:title="@string/Reportes" />
+                android:title="@string/reportes" />
             <item
                 android:id="@+id/Documentacion"
                 android:icon="@drawable/ic_picture_as_pdf_black"
-                android:title="Documentación" />
+                android:title="@string/documentacion" />
         </menu>
     </item>
 
-    <item android:title="@string/Configuracion">
+    <item android:title="@string/configuracion">
         <menu>
             <item
                 android:id="@+id/respaldo"
                 android:icon="@drawable/ic_archive_black"
-                android:title="Respaldo" />
+                android:title="@string/respaldo" />
             <item
                 android:id="@+id/restauracion"
                 android:icon="@drawable/ic_restore_black"
-                android:title="Restauración" />
+                android:title="@string/restauracion" />
             <item
                 android:id="@+id/exportar"
                 android:icon="@drawable/ic_sd_storage_black"
-                android:title="Exportar" />
+                android:title="@string/exportar" />
 
         </menu>
     </item>
-    <item android:title="@string/Memoria">
+    <item android:title="@string/memoria">
         <menu>
             <item
                 android:id="@+id/formatear"
                 android:icon="@mipmap/ic_sd"
-                android:title="Formatear SD" />
+                android:title="@string/format"/>
         </menu>
     </item>
     <item android:title="@string/sistema">

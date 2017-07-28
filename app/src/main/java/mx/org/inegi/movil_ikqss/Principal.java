@@ -96,6 +96,11 @@ public class Principal extends AppCompatActivity
             //startActivityForResult(intent, 0);
             startActivity(intent);
         }
+        if(id== R.id.descargas){
+            Intent intent = new Intent (this, Descargas.class);
+            //startActivityForResult(intent, 0);
+            startActivity(intent);
+        }
 /*
         if (id == R.id.nav_camera) {
             // Handle the camera action
